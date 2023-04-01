@@ -1,35 +1,38 @@
 
-		// Carrusel de imágenes
-		$(document).ready(function() {
-			var slideIndex = 0;
-			showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
 
-			function showSlides() {
-				var i;
-				var slides = $('#carousel img');
-				var overlays = $('#carousel .overlay');
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-					overlays[i].style.display = "none";
-				}
-				slideIndex++;
-				if (slideIndex > slides.length) {slideIndex = 1}
-				slides[slideIndex-1].style.display = "block";
-				overlays[slideIndex-1].style.display = "flex";
-				setTimeout(showSlides, 3000); // Cambia la imagen cada 3 segundos
-			}
-		});
-
-		// Enlaces al hacer clic en las superposiciones de texto
-		$(document).ready(function() {
-			$('#carousel .overlay').click(function() {
-				var overlayText = $(this).find('p').text();
-				if (overlayText === 'Enlace 1') {
-					window.location.href = 'enlace1.html';
-				} else if (overlayText === 'Enlace 2') {
-					window.location.href = 'enlace2.html';
-				} else if (overlayText === 'Enlace 3') {
-					window.location.href = 'enlace3.html';
-				}
-			});
-		});
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
