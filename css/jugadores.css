@@ -19,9 +19,19 @@ k /* Estilos para la barra de navegación */
 /* estilo para el menú de navegación */
 .navegacion ul li a{
   background-color: #00471b;
-  color: white;
+  color: rgb(255, 255, 255);
 }
-
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(3, 63, 3);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  font-size: 2em;
+}
 
 
 main {

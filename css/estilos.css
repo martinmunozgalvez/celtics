@@ -31,13 +31,21 @@ nav ul li a {
 }
 
 .logo {
-  width: 0,001px;
-  height: 0,001px;
+  width: 10px;
+  height: 10px;
 }
 
 
-
-
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(3, 63, 3);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
 /*carrusel
 .mySlides {
   display: none

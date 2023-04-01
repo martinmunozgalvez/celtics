@@ -3,32 +3,39 @@ body {
   font-family: Arial, sans-serif;
 }
   
-nav {
+.header {
   background-color: #00471b;
-  height: 50px;
+  display: flex;
+  justify-content: space-around;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.navegacion {
+  float: right;
+  color: #ffffff;
+  
 }
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
+.navegacion ul li a{
+  background-color: #00471b;
+  color: rgb(255, 255, 255);
 }
-
 nav ul li a {
-  display: block;
+  display: flex;
   color: white;
   text-decoration: none;
   padding: 15px;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  background-color: #002a0d;
+.nav-link {
+  color: white;
+  font-size: 16px; 
+  padding: 15px;
+  font-weight: bold;
+}
+
+.logo {
+  width: 0,001px;
+  height: 0,001px;
 }
 
   main {
@@ -38,12 +45,15 @@ nav ul li a:hover {
   }
   
   h1 {
-    font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(3, 63, 3);
     text-align: center;
-    color: #00471b;
-    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
   }
-  
   .image-container {
     display: flex;
     justify-content: space-around;
@@ -93,14 +103,14 @@ nav ul li a:hover {
   }
   
   /* Estilos específicos para los Celtics */
-  nav {
+  /* nav {
     background-color: #002a0d;
-  }
+  } */
   
-  h1 {
+  /* h1 {
     color: #00471b;
-  }
+  } */
   
-  footer {
+  /* footer {
     background-color: #f2f2f2;
-  }
+  } */
