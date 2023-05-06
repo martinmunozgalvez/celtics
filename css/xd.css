@@ -1,0 +1,46 @@
+header, .navegacion {
+  background-color: #00471b;
+  color: white;
+}
+.navegacion {
+  float: right;
+  color: #ffffff;
+  
+}
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  font-size: 16px; 
+  padding: 15px;
+  font-weight: bold;
+}
+
+.logo {
+  width: 10px;
+  height: 10px;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+    color: rgb(3, 63, 3);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+button#buscar {
+  background-color: #00471b;
+  display: block;
+  margin: 0 auto;
+}
+
