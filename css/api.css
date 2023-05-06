@@ -1,6 +1,8 @@
-header, .navegacion {
+header  {
   background-color: #00471b;
   color: white;
+  justify-content: space-around;
+  display: flex;
 }
 .navegacion {
   float: right;
